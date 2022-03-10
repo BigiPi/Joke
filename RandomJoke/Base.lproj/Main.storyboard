@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,40 +18,98 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-s8-Ir5">
-                                <rect key="frame" x="122" y="372.5" width="170" height="31"/>
+                                <rect key="frame" x="122" y="282.5" width="170" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="What about some fun?"/>
                                 <connections>
                                     <action selector="getJokeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t21-NE-oae"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abb-gx-17K">
-                                <rect key="frame" x="186.5" y="498" width="41.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For something" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abb-gx-17K">
+                                <rect key="frame" x="152" y="388" width="110" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push button to get joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHj-Wh-TXb">
-                                <rect key="frame" x="118.5" y="301.5" width="177" height="21"/>
+                                <rect key="frame" x="118.5" y="216.5" width="177" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv5-0t-4Pe">
+                                <rect key="frame" x="114" y="568.5" width="186" height="59"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="What about some quote?"/>
+                                <connections>
+                                    <action selector="getQuoteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4g-WA-tsf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push button to get quote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smi-2s-hYj">
+                                <rect key="frame" x="112.5" y="507.5" width="189.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x9-rF-4da">
+                                <rect key="frame" x="152" y="687.5" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EXQ-3H-9tF">
+                                <rect key="frame" x="16" y="52" width="382" height="144.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kRx-Jh-7N2">
+                                    <size key="itemSize" width="300" height="30"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GDA-fK-793">
+                                        <rect key="frame" x="41" y="0.0" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iP8-BV-dop">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9qX-CT-9E1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TzC-HM-xyK"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PrN-s8-Ir5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="CVc-hJ-tDU"/>
+                            <constraint firstItem="PrN-s8-Ir5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="CVc-hJ-tDU"/>
+                            <constraint firstItem="EXQ-3H-9tF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ewh-4S-UxV"/>
+                            <constraint firstItem="5x9-rF-4da" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jmu-5t-9Z9"/>
+                            <constraint firstItem="Smi-2s-hYj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70" id="Klo-gV-hoA"/>
                             <constraint firstItem="aHj-Wh-TXb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Um4-6w-npZ"/>
-                            <constraint firstItem="abb-gx-17K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="g8H-3W-U0q"/>
-                            <constraint firstItem="aHj-Wh-TXb" firstAttribute="bottom" secondItem="PrN-s8-Ir5" secondAttribute="top" constant="-50" id="gG0-3y-Jfv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EXQ-3H-9tF" secondAttribute="trailing" constant="16" id="YFU-Ah-oLp"/>
+                            <constraint firstItem="dv5-0t-4Pe" firstAttribute="top" secondItem="Smi-2s-hYj" secondAttribute="bottom" constant="40" id="Zxk-dd-eol"/>
+                            <constraint firstItem="Smi-2s-hYj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcs-dC-0NZ"/>
+                            <constraint firstItem="dv5-0t-4Pe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="dxz-2w-09b"/>
+                            <constraint firstItem="abb-gx-17K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="g8H-3W-U0q"/>
+                            <constraint firstItem="aHj-Wh-TXb" firstAttribute="bottom" secondItem="PrN-s8-Ir5" secondAttribute="top" constant="-45" id="gG0-3y-Jfv"/>
                             <constraint firstItem="abb-gx-17K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hra-RI-Eub"/>
+                            <constraint firstItem="dv5-0t-4Pe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2M-dZ-mAo"/>
                             <constraint firstItem="PrN-s8-Ir5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rOo-7j-vRk"/>
+                            <constraint firstItem="aHj-Wh-TXb" firstAttribute="top" secondItem="EXQ-3H-9tF" secondAttribute="bottom" constant="20" id="sWr-GM-LSA"/>
+                            <constraint firstItem="5x9-rF-4da" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="vR3-St-FcL"/>
+                            <constraint firstItem="EXQ-3H-9tF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="wI2-if-2tv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="getJokeButton" destination="PrN-s8-Ir5" id="Fpj-BG-0Bk"/>
+                        <outlet property="getQuoteButton" destination="dv5-0t-4Pe" id="qC4-gT-bSk"/>
                         <outlet property="jokeLabel" destination="abb-gx-17K" id="cFh-0g-8Aj"/>
+                        <outlet property="quoteCollectionView" destination="EXQ-3H-9tF" id="0CR-fl-COI"/>
+                        <outlet property="quoteLabel" destination="5x9-rF-4da" id="hcO-ec-VAH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

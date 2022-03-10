@@ -14,6 +14,9 @@
 		FC4512EA27DA2A61001964CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4512E927DA2A61001964CB /* Assets.xcassets */; };
 		FC4512ED27DA2A61001964CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4512EB27DA2A61001964CB /* LaunchScreen.storyboard */; };
 		FC4512F527DA2EC9001964CB /* JokeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4512F427DA2EC9001964CB /* JokeStruct.swift */; };
+		FC45130127DA4A4C001964CB /* QuoteStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC45130027DA4A4C001964CB /* QuoteStruct.swift */; };
+		FC45130427DA7221001964CB /* QuoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC45130227DA7221001964CB /* QuoteCollectionViewCell.swift */; };
+		FC45130527DA7221001964CB /* QuoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC45130327DA7221001964CB /* QuoteCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		FC4512EC27DA2A61001964CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4512EE27DA2A61001964CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4512F427DA2EC9001964CB /* JokeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeStruct.swift; sourceTree = "<group>"; };
+		FC45130027DA4A4C001964CB /* QuoteStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStruct.swift; sourceTree = "<group>"; };
+		FC45130227DA7221001964CB /* QuoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC45130327DA7221001964CB /* QuoteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				FC4512E027DA2A5F001964CB /* AppDelegate.swift */,
+				FC45130227DA7221001964CB /* QuoteCollectionViewCell.swift */,
+				FC45130327DA7221001964CB /* QuoteCollectionViewCell.xib */,
 				FC4512E227DA2A5F001964CB /* SceneDelegate.swift */,
+				FC45130027DA4A4C001964CB /* QuoteStruct.swift */,
 				FC4512F427DA2EC9001964CB /* JokeStruct.swift */,
 				FC4512E427DA2A5F001964CB /* ViewController.swift */,
 				FC4512E627DA2A5F001964CB /* Main.storyboard */,
@@ -129,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4512ED27DA2A61001964CB /* LaunchScreen.storyboard in Resources */,
+				FC45130527DA7221001964CB /* QuoteCollectionViewCell.xib in Resources */,
 				FC4512EA27DA2A61001964CB /* Assets.xcassets in Resources */,
 				FC4512E827DA2A5F001964CB /* Main.storyboard in Resources */,
 			);
@@ -141,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC45130127DA4A4C001964CB /* QuoteStruct.swift in Sources */,
+				FC45130427DA7221001964CB /* QuoteCollectionViewCell.swift in Sources */,
 				FC4512F527DA2EC9001964CB /* JokeStruct.swift in Sources */,
 				FC4512E527DA2A5F001964CB /* ViewController.swift in Sources */,
 				FC4512E127DA2A5F001964CB /* AppDelegate.swift in Sources */,

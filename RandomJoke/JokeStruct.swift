@@ -31,3 +31,5 @@ struct Joke: Codable {
 struct JokeInfo: Codable {
     var text: String?
 }
+
+
