@@ -18,6 +18,8 @@ class QuoteCollectionViewCell: UICollectionViewCell {
     
     func setup(_ quote: String) {
         quoteLabel.text = quote
+        layer.masksToBounds = true
+        layer.cornerRadius = 15
     }
 
 }
